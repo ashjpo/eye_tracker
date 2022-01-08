@@ -1,0 +1,6 @@
+project_list_url="/project/project_list"
+project_create_url="/project/project_create"
+project_delete_url="/project/project_delete"
+project_edit_url="/project/project_edit"
+project_scene_detail_url="/project/project_scene_detail"
+project_key_url="/project/project_key"

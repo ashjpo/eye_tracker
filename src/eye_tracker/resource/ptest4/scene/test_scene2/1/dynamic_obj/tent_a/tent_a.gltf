@@ -1,0 +1,306 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 460,
+      "type": "VEC3",
+      "max": [
+        1.801777720451355,
+        1.2000001668930054,
+        1.3307870626449585
+      ],
+      "min": [
+        -1.8017779588699341,
+        -0.006215998437255621,
+        -1.3307845592498779
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 460,
+      "type": "VEC3",
+      "max": [
+        0.99885225296020508,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.97127431631088257,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 460,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.681341290473938,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 460,
+      "type": "VEC2",
+      "max": [
+        0.99743485450744629,
+        0.998308539390564
+      ],
+      "min": [
+        0.0035307407379150391,
+        0.0092629194259643555
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 918,
+      "type": "SCALAR",
+      "max": [
+        459.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 57,
+      "type": "VEC3",
+      "max": [
+        0.42129653692245483,
+        0.14574755728244781,
+        0.949999988079071
+      ],
+      "min": [
+        -0.42130142450332642,
+        -2.6444718059792649E-07,
+        -0.949999988079071
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 57,
+      "type": "VEC3",
+      "max": [
+        0.81230980157852173,
+        0.99993300437927246,
+        0.69018775224685669
+      ],
+      "min": [
+        -0.8770330548286438,
+        0.47327899932861328,
+        -0.50656461715698242
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 57,
+      "type": "VEC4",
+      "max": [
+        0.999983012676239,
+        0.84997045993804932,
+        0.0760224238038063,
+        1.0
+      ],
+      "min": [
+        0.43001556396484375,
+        -0.80885773897171021,
+        -0.30786618590354919,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 57,
+      "type": "VEC2",
+      "max": [
+        0.9916195273399353,
+        0.68507087230682373
+      ],
+      "min": [
+        0.49382057785987854,
+        0.007596135139465332
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5121,
+      "count": 210,
+      "type": "SCALAR",
+      "max": [
+        56.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tent_a.bin",
+      "byteLength": 26862
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5520
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5520,
+      "byteLength": 5520
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11040,
+      "byteLength": 7360
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18400,
+      "byteLength": 3680
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22080,
+      "byteLength": 1836
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 23916,
+      "byteLength": 684
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 24600,
+      "byteLength": 684
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 25284,
+      "byteLength": 912
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26196,
+      "byteLength": 456
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26652,
+      "byteLength": 210
+    }
+  ],
+  "images": [
+    {
+      "uri": "Tent01.png",
+      "name": "Tent01"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Tent01"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "tent_A"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "sleepingBag"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "mesh": 0,
+      "name": "tent_A"
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        -0.214321285,
+        0.0,
+        -0.0161790717
+      ],
+      "name": "sleepingBag"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tent_a"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Tent01"
+    }
+  ]
+}

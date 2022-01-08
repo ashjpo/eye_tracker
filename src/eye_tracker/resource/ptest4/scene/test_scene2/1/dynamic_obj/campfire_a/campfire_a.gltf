@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 337,
+      "type": "VEC3",
+      "max": [
+        0.54273319244384766,
+        0.27139699459075928,
+        0.53923547267913818
+      ],
+      "min": [
+        -0.54273396730422974,
+        -0.031339190900325775,
+        -0.53923457860946655
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 337,
+      "type": "VEC3",
+      "max": [
+        0.991654634475708,
+        1.0,
+        0.97780913114547729
+      ],
+      "min": [
+        -0.99895572662353516,
+        -0.96592581272125244,
+        -0.98910951614379883
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 337,
+      "type": "VEC4",
+      "max": [
+        0.9857829213142395,
+        0.994195282459259,
+        0.99751961231231689,
+        1.0
+      ],
+      "min": [
+        -0.99318337440490723,
+        -0.98772388696670532,
+        -0.97694522142410278,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 337,
+      "type": "VEC2",
+      "max": [
+        0.91954737901687622,
+        0.98695933818817139
+      ],
+      "min": [
+        0.307895302772522,
+        0.0059984326362609863
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 945,
+      "type": "SCALAR",
+      "max": [
+        336.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "campfire_a.bin",
+      "byteLength": 18066
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 4044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4044,
+      "byteLength": 4044
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8088,
+      "byteLength": 5392
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13480,
+      "byteLength": 2696
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16176,
+      "byteLength": 1890
+    }
+  ],
+  "images": [
+    {
+      "uri": "Campfire.png",
+      "name": "Campfire"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Campfire"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "campfire_A"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "campfire_A"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "campfire_a"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Campfire"
+    }
+  ]
+}

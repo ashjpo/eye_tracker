@@ -1,0 +1,166 @@
+*****************************
+***********SYSTEM************
+*****************************
+Unity Version:2019.3.0f6
+OS:Windows 10  (10.0.0) 64bit
+System Time: 2020/10/20 23:15:04
+
+*****************************
+***********PROJECT***********
+*****************************
+SDK Type: CVR_DEFAULT
+SDK Version: 0.23.0
+Api Key: ****8d52
+Developer Key: ****temp
+Enable Logging: True
+Enable Development Logging: False
+Gaze Type: Physics
+Snapshot Interval: 0.1
+Dynamic Object Search in Parent: True
+Dynamic Object Layer Mask: -1
+Track GPS Location: False
+GPS Sync with Player Update: False
+GPS Update Interval: 1
+GPS Accuracy: 2
+Record Floor Position: True
+Gaze Snapshot Batch Size: 64
+Event Snapshot Batch Size: 64
+Event Extreme Batch Size: 256
+Event Minimum Timer: 2
+Event Automatic Send Timer: 10
+Dynamic Snapshot Batch Size: 64
+Dynamic Extreme Batch Size: 256
+Dynamic Minimum Timer: 2
+Dynamic Automatic Send Timer: 10
+Sensor Snapshot Batch Size: 64
+Sensor Extreme Batch Size: 256
+Sensor Minimum Timer: 6
+Sensor Automatic Send Timer: 10
+Fixation Snapshot Batch Size: 64
+Fixation Extreme Batch Size: 2
+Fixation Minimum Timer: 2
+Fixation Automatic Send Timer: 10
+Save Data to Local Cache if no internet connection: True
+Cache Size (bytes): 10485760
+Cache Size (mb): 10.0 MB
+Custom Protocol: http
+Custom Gateway: ipv4.fiddler
+Custom Viewer: viewer.cognitive3d.com/scene/
+Custom Dashboard: app.cognitive3d.com
+Send Data on HMD Remove: True
+Send Data on Level Load: True
+Send Data on Quit: True
+Send Data on Hotkey: True
+Send Data Primary Hotkey: F9
+Send Data Hotkey Modifiers: True False False
+Texture Export Quality: 1
+Export Lowest LOD from LODGroup Components: True
+Export AO Maps: False
+Scene Settings:
+  ├─ReadyRoom
+  │  ├─Scene Id: 
+  │  ├─Scene Path: Assets/CognitiveVR/ReadyRoom/ReadyRoom.unity
+  │  ├─Last Revision: 0
+  │  ├─Version Number: 1
+  │  └─Version Id: 0
+  └─SampleScene
+     ├─Scene Id: 9646bae229e02b7d45223f60a0819215
+     ├─Scene Path: Assets/Scenes/SampleScene.unity
+     ├─Last Revision: 5249071021656536248
+     ├─Version Number: 1
+     └─Version Id: 24
+
+*****************************
+********CURRENT SCENE********
+*****************************
+Scene Name: test_scene2
+Scene Settings not included in Preferences
+Main Camera GameObject: Main Camera
+Manager Initialize On Start: True
+Manager Startup Delay Time (s): 2
+
+*****************************
+****CURRENT SCENE OBJECTS****
+*****************************
+Dynamic Object Count: 5
+  ├─barrel02_A
+  │  ├─Mesh Name: barrel02_a
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─barrel04_A
+  │  ├─Mesh Name: barrel04_a
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─campfire_A
+  │  ├─Mesh Name: campfire_a
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─sign_round
+  │  ├─Mesh Name: sign_round
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  └─tent_A
+     ├─Mesh Name: tent_a
+     ├─Has Collider: true
+     ├─Collider Type: UnityEngine.MeshCollider
+     ├─Has Children: true
+     └─Has Child Colliders: false
+
+*****************************
+********EXPORT FOLDER********
+*****************************
+/CognitiveVR_SceneExplorerExport (8mb)
+   /Dynamic (5.77mb)
+      /barrel02_a (1.48mb)
+         barrel02_a.bin (0.01mb)
+         barrel02_a.gltf (0.00mb)
+         cvr_object_thumbnail.png (0.05mb)
+         Props.png (1.42mb)
+      /barrel04_a (1.48mb)
+         barrel04_a.bin (0.01mb)
+         barrel04_a.gltf (0.00mb)
+         cvr_object_thumbnail.png (0.04mb)
+         Props.png (1.42mb)
+      /campfire_a (0.60mb)
+         Campfire.png (0.53mb)
+         campfire_a.bin (0.02mb)
+         campfire_a.gltf (0.00mb)
+         cvr_object_thumbnail.png (0.05mb)
+      /fence_metal_b (0.78mb)
+         cvr_object_thumbnail.png (0.03mb)
+         Fences.png (0.74mb)
+         fence_metal_b.bin (0.02mb)
+         fence_metal_b.gltf (0.00mb)
+      /sign_round (0.31mb)
+         cvr_object_thumbnail.png (0.02mb)
+         sign_round.bin (0.01mb)
+         sign_round.gltf (0.00mb)
+         Sign_Round.png (0.28mb)
+      /tent_a (0.42mb)
+         cvr_object_thumbnail.png (0.05mb)
+         Tent01.png (0.34mb)
+         tent_a.bin (0.03mb)
+         tent_a.gltf (0.01mb)
+      /woodpile_b (0.71mb)
+         Campfire.png (0.53mb)
+         cvr_object_thumbnail.png (0.15mb)
+         woodpile_b.bin (0.03mb)
+         woodpile_b.gltf (0.00mb)
+   /SampleScene (1.68mb)
+      debug.log (0.00mb)
+      Pier.png (0.20mb)
+      Props.png (1.42mb)
+      scene.bin (0.02mb)
+      scene.gltf (0.01mb)
+      settings.json (0.00mb)
+      /screenshot (0.02mb)
+         screenshot.png (0.02mb)
+   /test_scene2 (0.22mb)
+      Pier.png (0.20mb)
+      scene.bin (0.02mb)
+      scene.gltf (0.00mb)
+      settings.json (0.00mb)

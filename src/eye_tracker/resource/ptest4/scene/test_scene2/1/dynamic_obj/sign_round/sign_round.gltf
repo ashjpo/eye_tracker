@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 130,
+      "type": "VEC3",
+      "max": [
+        0.32579100131988525,
+        5.2828779220581055,
+        1.0
+      ],
+      "min": [
+        -0.32579100131988525,
+        -6.2357865537876478E-09,
+        -0.99999970197677612
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 130,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.98480784893035889,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 130,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.98594003915786743,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.98594003915786743,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 130,
+      "type": "VEC2",
+      "max": [
+        0.98581641912460327,
+        0.99357551336288452
+      ],
+      "min": [
+        0.022718369960784912,
+        0.015721142292022705
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 312,
+      "type": "SCALAR",
+      "max": [
+        129.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "sign_round.bin",
+      "byteLength": 6552
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1560
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1560,
+      "byteLength": 1560
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3120,
+      "byteLength": 2080
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5200,
+      "byteLength": 1040
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6240,
+      "byteLength": 312
+    }
+  ],
+  "images": [
+    {
+      "uri": "Sign_Round.png",
+      "name": "Sign_Round"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Sign_Round"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "sign_round"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "sign_round"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "sign_round"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Sign_Round"
+    }
+  ]
+}

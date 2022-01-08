@@ -1,0 +1,401 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC3",
+      "max": [
+        0.34473630785942078,
+        1.0127060413360596,
+        0.34473907947540283
+      ],
+      "min": [
+        -0.34474608302116394,
+        -1.9370298787180218E-07,
+        -0.344740092754364
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.36857825517654419,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC2",
+      "max": [
+        0.32569751143455505,
+        0.10627323389053345
+      ],
+      "min": [
+        0.0063353283330798149,
+        0.0018852949142456055
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 324,
+      "type": "SCALAR",
+      "max": [
+        117.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC3",
+      "max": [
+        1.1622109413146973,
+        2.1135902404785156,
+        3.1500074863433838
+      ],
+      "min": [
+        -1.1622116565704346,
+        -1.5258788721439487E-07,
+        -0.16221222281455994
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 336,
+      "type": "VEC2",
+      "max": [
+        0.6632615327835083,
+        0.99274057149887085
+      ],
+      "min": [
+        0.0052760173566639423,
+        0.0051963329315185547
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 600,
+      "type": "SCALAR",
+      "max": [
+        335.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "scene.bin",
+      "byteLength": 23316
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1416,
+      "byteLength": 1416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2832,
+      "byteLength": 1888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4720,
+      "byteLength": 944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5664,
+      "byteLength": 324
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5988,
+      "byteLength": 4032
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10020,
+      "byteLength": 4032
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14052,
+      "byteLength": 5376
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19428,
+      "byteLength": 2688
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22116,
+      "byteLength": 1200
+    }
+  ],
+  "cameras": [
+    {
+      "perspective": {
+        "aspectRatio": 1.3333333730697632,
+        "yfov": 1.0471975803375244,
+        "zfar": 1000.1340942382813,
+        "znear": 0.30000001192092896
+      },
+      "type": "perspective",
+      "name": "Main Camera"
+    }
+  ],
+  "images": [
+    {
+      "uri": "Props.png",
+      "name": "Props"
+    },
+    {
+      "uri": "Pier.png",
+      "name": "Pier"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Props"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Pier"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "barrel01_A"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1
+        }
+      ],
+      "name": "pier_end_A"
+    }
+  ],
+  "nodes": [
+    {
+      "camera": 0,
+      "translation": [
+        0.0,
+        1.0,
+        -10.0
+      ],
+      "name": "Main Camera"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation": [
+        -2.39844847,
+        -1.342299,
+        -0.9562187
+      ],
+      "name": "barrel01_A"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation": [
+        0.0269098282,
+        -0.9552622,
+        0.64037323
+      ],
+      "name": "pier_end_A"
+    },
+    {
+      "rotation": [
+        0.109381631,
+        0.8754261,
+        0.408217877,
+        -0.234569684
+      ],
+      "translation": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      },
+      "name": "Directional Light"
+    },
+    {
+      "name": "Cognitive3D_Manager"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "scene"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Props"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "Pier"
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "type": "directional",
+          "color": [
+            1.0,
+            0.956862748,
+            0.8392157
+          ],
+          "name": "Directional Light"
+        }
+      ]
+    }
+  }
+}

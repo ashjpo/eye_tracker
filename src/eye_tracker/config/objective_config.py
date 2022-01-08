@@ -1,0 +1,8 @@
+objective_list_url="/objective/objective_list/<project_id>"
+objective_create_url="/objective/objective_create"
+objective_create_version_url="/objective/objective_create_version/<scene_version_id>/<objective_id>"
+objective_delete_url="/objective/objective_delete"
+objective_detail_url="/objective/objective_detail/<scene_version_id>/<objective_id>"
+objective_version_result_url="/objective/objective_version_result"
+objective_version_stepresult_url="/objective/objective_version_stepresult/<scene_version_id>/<objective_version_id>"
+objective_session_result_url="/objective/objective_session_result/<session_id>"

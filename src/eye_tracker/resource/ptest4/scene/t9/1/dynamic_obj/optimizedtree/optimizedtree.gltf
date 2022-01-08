@@ -1,0 +1,223 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC3",
+      "max": [
+        0.65224778652191162,
+        14.742584228515625,
+        0.68548089265823364
+      ],
+      "min": [
+        -0.49739205837249756,
+        0.0,
+        -1.3005963563919067
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC3",
+      "max": [
+        0.99990034103393555,
+        0.31802377104759216,
+        0.99998438358306885
+      ],
+      "min": [
+        -0.99995720386505127,
+        -0.25403168797492981,
+        -0.99997961521148682
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC4",
+      "max": [
+        0.99999755620956421,
+        0.28618758916854858,
+        0.99997079372406006,
+        1.0
+      ],
+      "min": [
+        -0.99998527765274048,
+        -0.28618752956390381,
+        -0.99998986721038818,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC2",
+      "max": [
+        0.75,
+        1.0
+      ],
+      "min": [
+        0.25,
+        -21.335412979125977
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC2",
+      "max": [
+        0.49963757395744324,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 88,
+      "type": "VEC4",
+      "max": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        0.0,
+        0.99733024835586548
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5121,
+      "count": 420,
+      "type": "SCALAR",
+      "max": [
+        87.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "optimizedtree.bin",
+      "byteLength": 6756
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1056,
+      "byteLength": 1056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2112,
+      "byteLength": 1408
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3520,
+      "byteLength": 704
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4224,
+      "byteLength": 704
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4928,
+      "byteLength": 1408
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6336,
+      "byteLength": 420
+    }
+  ],
+  "images": [
+    {
+      "uri": "diffuse.png",
+      "name": "diffuse"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "alphaCutoff": 0.30000001192092896,
+      "doubleSided": true,
+      "name": "Optimized Bark Material"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "COLOR_0": 5
+          },
+          "indices": 6,
+          "material": 0
+        }
+      ],
+      "name": "OptimizedTree"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "OptimizedTree"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "optimizedtree"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "diffuse"
+    }
+  ]
+}

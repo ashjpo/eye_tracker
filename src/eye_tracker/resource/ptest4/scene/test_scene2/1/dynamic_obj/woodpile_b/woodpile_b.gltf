@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 566,
+      "type": "VEC3",
+      "max": [
+        0.99640601873397827,
+        0.75209546089172363,
+        0.37240096926689148
+      ],
+      "min": [
+        -0.32846328616142273,
+        0.0032257556449621916,
+        -0.35643187165260315
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 566,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99835371971130371,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 566,
+      "type": "VEC4",
+      "max": [
+        0.87076747417449951,
+        0.99995476007461548,
+        2.9888956305512693E-06,
+        1.0
+      ],
+      "min": [
+        -0.87075823545455933,
+        -0.999954879283905,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 566,
+      "type": "VEC2",
+      "max": [
+        0.98580938577651978,
+        0.99317771196365356
+      ],
+      "min": [
+        0.68020033836364746,
+        0.72499990463256836
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 1284,
+      "type": "SCALAR",
+      "max": [
+        565.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "woodpile_b.bin",
+      "byteLength": 29736
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6792
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6792,
+      "byteLength": 6792
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13584,
+      "byteLength": 9056
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22640,
+      "byteLength": 4528
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27168,
+      "byteLength": 2568
+    }
+  ],
+  "images": [
+    {
+      "uri": "Campfire.png",
+      "name": "Campfire"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Campfire"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "woodPile_B"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "woodPile_B"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "woodpile_b"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Campfire"
+    }
+  ]
+}

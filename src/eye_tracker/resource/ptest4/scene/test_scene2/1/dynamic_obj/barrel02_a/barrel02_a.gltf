@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC3",
+      "max": [
+        0.34473630785942078,
+        1.0127060413360596,
+        0.34473907947540283
+      ],
+      "min": [
+        -0.34474608302116394,
+        -1.9370298787180218E-07,
+        -0.344740092754364
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.36857828497886658,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 118,
+      "type": "VEC2",
+      "max": [
+        0.3307955265045166,
+        0.22652542591094971
+      ],
+      "min": [
+        0.0075102802366018295,
+        0.08894723653793335
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 324,
+      "type": "SCALAR",
+      "max": [
+        117.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "barrel02_a.bin",
+      "byteLength": 5988
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1416,
+      "byteLength": 1416
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2832,
+      "byteLength": 1888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4720,
+      "byteLength": 944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5664,
+      "byteLength": 324
+    }
+  ],
+  "images": [
+    {
+      "uri": "Props.png",
+      "name": "Props"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true,
+      "name": "Props"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "barrel02_A"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "barrel02_A"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "barrel02_a"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Props"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 317,
+      "type": "VEC3",
+      "max": [
+        2.0252537727355957,
+        2.0639810562133789,
+        0.140874445438385
+      ],
+      "min": [
+        -0.023627929389476776,
+        -0.023311445489525795,
+        -0.57201176881790161
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 317,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9965052604675293,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 317,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99999213218688965,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9085240364074707,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 317,
+      "type": "VEC2",
+      "max": [
+        0.68698269128799438,
+        0.994926929473877
+      ],
+      "min": [
+        0.0011061481200158596,
+        0.20083391666412354
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 870,
+      "type": "SCALAR",
+      "max": [
+        316.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "fence_metal_b.bin",
+      "byteLength": 16956
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3804
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3804,
+      "byteLength": 3804
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7608,
+      "byteLength": 5072
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12680,
+      "byteLength": 2536
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15216,
+      "byteLength": 1740
+    }
+  ],
+  "images": [
+    {
+      "uri": "Fences.png",
+      "name": "Fences"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "Fences"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "fence_metal_B"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "fence_metal_B"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "fence_metal_b"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "Fences"
+    }
+  ]
+}

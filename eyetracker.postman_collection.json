@@ -1,0 +1,981 @@
+{
+	"info": {
+		"_postman_id": "6692f30c-2f48-4850-b417-aa3227d04176",
+		"name": "eyetracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "127.0.0.1/admin/organization_regist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "org_name",
+									"value": "org1",
+									"type": "text"
+								},
+								{
+									"key": "org_des",
+									"value": "test1",
+									"type": "text"
+								},
+								{
+									"key": "org_account",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "org_password",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1/admin/organization_regist",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"organization_regist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/admin/organization_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/admin/organization_list",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"organization_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/admin/organization_detail?org_id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/admin/organization_detail?org_id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"organization_detail"
+							],
+							"query": [
+								{
+									"key": "org_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/admin/user_regist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "org_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "org_account",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "org_password",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "user_name",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "user_des",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "user_account",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "user_password",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1/admin/user_regist",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"user_regist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/admin/user_org_list?org_id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/admin/user_org_list?org_id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"user_org_list"
+							],
+							"query": [
+								{
+									"key": "org_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/admin/user_detail?user_id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/admin/user_detail?user_id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"admin",
+								"user_detail"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "project",
+			"item": [
+				{
+					"name": "127.0.0.1/project/project_create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"organizationId\": \"1\",\r\n\t\"name\": \"ptest4\",\r\n\t\"description\": \"666\",\r\n\t\"type\": \"3d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1/project/project_create",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"project",
+								"project_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/project/project_list?org_id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/project/project_list?org_id=1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"project",
+								"project_list"
+							],
+							"query": [
+								{
+									"key": "org_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/project/project_scene_detail?pro_id=7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/project/project_scene_detail?pro_id=7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"project",
+								"project_scene_detail"
+							],
+							"query": [
+								{
+									"key": "pro_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/project/project_key?pro_id=7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1/project/project_key?pro_id=7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"project",
+								"project_key"
+							],
+							"query": [
+								{
+									"key": "pro_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "scene",
+			"item": [
+				{
+					"name": "127.0.0.1/scene/scene_detail/04d200e364ec341b05406c5ba2ee42d7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/scene/scene_detail/04d200e364ec341b05406c5ba2ee42d7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"scene",
+								"scene_detail",
+								"04d200e364ec341b05406c5ba2ee42d7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "dynamic_obj",
+			"item": [
+				{
+					"name": "127.0.0.1/dynamic_obj/dynamic_obj_list/22",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/dynamic_obj/dynamic_obj_list/22/objects",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"dynamic_obj",
+								"dynamic_obj_list",
+								"22",
+								"objects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/dynamic_obj/dynamic_obj_detail/22/objects/17",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/dynamic_obj/dynamic_obj_detail/22/objects/17",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"dynamic_obj",
+								"dynamic_obj_detail",
+								"22",
+								"objects",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "objective",
+			"item": [
+				{
+					"name": "127.0.0.1/objective/objective_create/22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"sceneVersionId\": 22,\r\n\t\"name\": \"test1\",\r\n\t\"description\": \"111\",\r\n\t\"steps\": [{\r\n\t\t\"type\": \"eventstep\",\r\n\t\t\"usingEventProperty\": true,\r\n\t\t\"usingDynamicObject\": true,\r\n\t\t\"occurrenceValue\": 5,\r\n\t\t\"eventName\": \"hhhhhhhhhh\",\r\n\t\t\"objectNames\": [{\r\n\t\t\t\"sdkId\": \"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\",\r\n\t\t\t\"name\": \"Sphere\"\r\n\t\t}],\r\n\t\t\"occurrenceOperator\": \"lt\",\r\n\t\t\"dynamicObjectIds\": [\"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\"],\r\n\t\t\"eventPropertyName\": \"ok\",\r\n\t\t\"eventPropertyType\": \"textualEventProp\",\r\n\t\t\"eventPropertyOperator\": \"eq\",\r\n\t\t\"eventPropertyValue\": \"3\",\r\n\t\t\"id\": 1602551033047,\r\n\t\t\"formattedType\": \"Event\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Event \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"hhhhhhhhhh\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" with object \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": \"Sphere\"\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \", where property is \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"ok\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \" is \", \"\", \" \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"3\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \", \", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" occurs \", \"less than\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 5\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"times\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"sequenceNumber\": 1\r\n\t}, {\r\n\t\t\"type\": \"gazestep\",\r\n\t\t\"usingEventProperty\": false,\r\n\t\t\"usingDynamicObject\": true,\r\n\t\t\"occurrenceValue\": 1,\r\n\t\t\"objectNames\": [{\r\n\t\t\t\"sdkId\": \"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\",\r\n\t\t\t\"name\": \"Sphere\"\r\n\t\t}],\r\n\t\t\"dynamicObjectIds\": [\"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\"],\r\n\t\t\"durationOperator\": \"gte\",\r\n\t\t\"durationValue\": 20,\r\n\t\t\"occurrenceOperator\": \"gte\",\r\n\t\t\"id\": 1602551064401,\r\n\t\t\"formattedType\": \"Gaze\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Gaze at object \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"Sphere\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \" for \", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" \", \"at least\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 20\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"seconds\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"sequenceNumber\": 2\r\n\t}]\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/objective/objective_create/22",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"objective",
+								"objective_create",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/objective/objective_create_version/22/5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"test1\",\r\n\t\"description\": \"111\",\r\n\t\"steps\": [{\r\n\t\t\"occurrenceOperator\": \"lt\",\r\n\t\t\"eventPropertyValue\": \"3\",\r\n\t\t\"sequenceNumber\": 1,\r\n\t\t\"eventPropertyName\": \"ok\",\r\n\t\t\"name\": \"\",\r\n\t\t\"eventName\": \"hhhhhhhhhh\",\r\n\t\t\"dynamicObjectIds\": [\"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\"],\r\n\t\t\"type\": \"eventstep\",\r\n\t\t\"occurrenceValue\": 5,\r\n\t\t\"isStep\": true,\r\n\t\t\"eventPropertyOperator\": \"eq\",\r\n\t\t\"usingDynamicObject\": true,\r\n\t\t\"usingEventProperty\": true,\r\n\t\t\"formattedType\": \"Event\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Event \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"hhhhhhhhhh\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" with object \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": \"Sphere\"\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \", where property is \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"ok\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \" is \", \"\", \" \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"3\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \", \", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" occurs \", \"less than\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 5\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"times\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"id\": 0,\r\n\t\t\"index\": 0\r\n\t}, {\r\n\t\t\"occurrenceOperator\": \"gte\",\r\n\t\t\"sequenceNumber\": 2,\r\n\t\t\"durationOperator\": \"gte\",\r\n\t\t\"durationValue\": 20,\r\n\t\t\"name\": \"\",\r\n\t\t\"dynamicObjectIds\": [\"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\"],\r\n\t\t\"type\": \"gazestep\",\r\n\t\t\"occurrenceValue\": 1,\r\n\t\t\"isStep\": true,\r\n\t\t\"usingDynamicObject\": true,\r\n\t\t\"usingEventProperty\": false,\r\n\t\t\"formattedType\": \"Gaze\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Gaze at object \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"Sphere\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \" for \", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" \", \"at least\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 20\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"seconds\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"id\": 1,\r\n\t\t\"index\": 1\r\n\t}, {\r\n\t\t\"occurrenceOperator\": \"gte\",\r\n\t\t\"sequenceNumber\": 3,\r\n\t\t\"durationOperator\": \"gte\",\r\n\t\t\"durationValue\": 5,\r\n\t\t\"name\": \"\",\r\n\t\t\"dynamicObjectIds\": [\"editor_c2d96d27-c326-48d7-a95b-32531d6f06cc\"],\r\n\t\t\"type\": \"fixationstep\",\r\n\t\t\"occurrenceValue\": 1,\r\n\t\t\"isStep\": true,\r\n\t\t\"usingDynamicObject\": true,\r\n\t\t\"usingEventProperty\": false,\r\n\t\t\"formattedType\": \"Fixation\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Fixate on object \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"Sphere\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \" for \", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" \", \"at least\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 5\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"seconds\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"id\": 2,\r\n\t\t\"index\": 2\r\n\t}, {\r\n\t\t\"type\": \"eventstep\",\r\n\t\t\"usingEventProperty\": false,\r\n\t\t\"usingDynamicObject\": false,\r\n\t\t\"occurrenceValue\": 6,\r\n\t\t\"eventName\": \"c3d.sessionStart\",\r\n\t\t\"occurrenceOperator\": \"lt\",\r\n\t\t\"id\": 1602554762418,\r\n\t\t\"formattedType\": \"Event\",\r\n\t\t\"formattedStep\": {\r\n\t\t\t\"type\": \"span\",\r\n\t\t\t\"key\": null,\r\n\t\t\t\"ref\": null,\r\n\t\t\t\"props\": {\r\n\t\t\t\t\"className\": \"formattedStep\",\r\n\t\t\t\t\"children\": [\"Event \", {\r\n\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": \"Session Start\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}, \"\", {\r\n\t\t\t\t\t\"type\": \"span\",\r\n\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\"children\": [\" occurs \", \"less than\", \" \", {\r\n\t\t\t\t\t\t\t\"type\": \"em\",\r\n\t\t\t\t\t\t\t\"key\": null,\r\n\t\t\t\t\t\t\t\"ref\": null,\r\n\t\t\t\t\t\t\t\"props\": {\r\n\t\t\t\t\t\t\t\t\"children\": 6\r\n\t\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t\t\t}, \" \", \"times\"]\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"_owner\": null\r\n\t\t\t\t}]\r\n\t\t\t},\r\n\t\t\t\"_owner\": null\r\n\t\t},\r\n\t\t\"sequenceNumber\": 4\r\n\t}]\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/objective/objective_create_version/22/4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"objective",
+								"objective_create_version",
+								"22",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/objective/objective_detail/22/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/objective/objective_detail/22/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"objective",
+								"objective_detail",
+								"22",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/objective/objective_list/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/objective/objective_list/7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"objective",
+								"objective_list",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "session",
+			"item": [
+				{
+					"name": "127.0.0.1/session/session_list/23?page=0&limit=20",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_list/23?page=0&limit=20",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_list",
+								"23"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_metadata/23/30",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_metadata/23/30",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_metadata",
+								"23",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_single_queries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"projectId\": 7,\r\n\t\"sceneId\": \"04d200e364ec341b05406c5ba2ee42d7\",\r\n\t\"versionId\": 23,\r\n\t\"sessionId\": \"1602559873_aa000a11bb61d33746f791ae40955cfb93618b66\"\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/session/session_single_queries",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_single_queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_gaze_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_gaze_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_gaze_data",
+								"23",
+								"1602559873_aa000a11bb61d33746f791ae40955cfb93618b66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_fixation_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_fixation_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_fixation_data",
+								"23",
+								"1602559873_aa000a11bb61d33746f791ae40955cfb93618b66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_event_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_event_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_event_data",
+								"23",
+								"1602559873_aa000a11bb61d33746f791ae40955cfb93618b66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_dynamicobj_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/session/session_dynamicobj_data/23/1602559873_aa000a11bb61d33746f791ae40955cfb93618b66",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_dynamicobj_data",
+								"23",
+								"1602559873_aa000a11bb61d33746f791ae40955cfb93618b66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_slicer_metric_object_queries/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"gazeType\":\"fixation\",\"entityFilters\":{\"projectId\":4,\"sceneId\":\"8186a9f6-64cb-46a0-ba5e-55255cbb8000\",\"versionId\":22},\"aggregations\":\"all\",\"objectIds\":[\"editor_5bed61aa-9fa4-448d-b496-723616d5b33f\"]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1/session/session_slicer_metric_object_queries/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_slicer_metric_object_queries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_slicer_metric_object_queries/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"gazeType\":\"gaze\",\"entityFilters\":{\"projectId\":4,\"sceneId\":\"8186a9f6-64cb-46a0-ba5e-55255cbb8000\",\"versionId\":22},\"aggregations\":\"all\",\"objectIds\":[\"editor_5bed61aa-9fa4-448d-b496-723616d5b33f\"]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1/session/session_slicer_metric_object_queries/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_slicer_metric_object_queries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"entityFilters\": {\r\n\t\t\"projectId\": 4,\r\n\t\t\"sceneId\": \"70202c1f-3a53-4e89-bfad-c97619e0b888\",\r\n\t\t\"versionId\": 23\r\n\t},\r\n\t\"aggregation\": {\r\n\t\t\"type\": \"objectFixation\",\r\n\t\t\"objectId\": \"editor_5bed61aa-9fa4-448d-b496-723616d5b33f\",\r\n\t\t\"name\": \"main\"\r\n\t},\r\n\t\"interval\": 0.1\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"dynamic_obj_cube_agg_queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"entityFilters\": {\r\n\t\t\"projectId\": 4,\r\n\t\t\"sceneId\": \"70202c1f-3a53-4e89-bfad-c97619e0b888\",\r\n\t\t\"versionId\": 23\r\n\t},\r\n\t\"aggregation\": {\r\n\t\t\"type\": \"objectGaze\",\r\n\t\t\"objectId\": \"editor_5bed61aa-9fa4-448d-b496-723616d5b33f\",\r\n\t\t\"name\": \"main\"\r\n\t},\r\n\t\"interval\": 0.1\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"dynamic_obj_cube_agg_queries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"entityFilters\": {\r\n\t\t\"projectId\": 258,\r\n\t\t\"sceneId\": \"8186a9f6-64cb-46a0-ba5e-55255cbb8000\",\r\n\t\t\"versionId\": 22\r\n\t},\r\n\t\"eventFilters\": [],\r\n\t\"sessionFilters\": [{\r\n\t\t\"field\": {\r\n\t\t\t\"fieldName\": \"date\",\r\n\t\t\t\"fieldParent\": \"session\"\r\n\t\t},\r\n\t\t\"op\": \"gte\",\r\n\t\t\"value\": 1601481600000\r\n\t}, {\r\n\t\t\"field\": {\r\n\t\t\t\"fieldName\": \"date\",\r\n\t\t\t\"fieldParent\": \"session\"\r\n\t\t},\r\n\t\t\"op\": \"lte\",\r\n\t\t\"value\": 1701740799999\r\n\t}],\r\n\t\"aggregation\": {\r\n\t\t\"type\": \"worldGaze\",\r\n\t\t\"name\": \"main\"\r\n\t},\r\n\t\"minCount\": 2,\r\n\t\"interval\": 0.1\r\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1/session/dynamic_obj_cube_agg_queries",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"dynamic_obj_cube_agg_queries"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "127.0.0.1/category/set_obj_category/22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"group_test5\"}"
+						},
+						"url": {
+							"raw": "127.0.0.1/category/set_obj_category/22",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"category",
+								"set_obj_category",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/category/set_dobj_to_group/1/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"createdAt\":1602647770000,\"updatedAt\":1602647770000,\"id\":23185,\"name\":\"g2\",\"dynamicObjectsIds\":[21783]}"
+						},
+						"url": {
+							"raw": "127.0.0.1/category/set_dobj_to_group/1/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"category",
+								"set_dobj_to_group",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/category/set_obj_category/22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"categoryId\":2034,\"name\":\"g2\"}"
+						},
+						"url": {
+							"raw": "127.0.0.1/category/set_obj_category/22",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"category",
+								"set_obj_category",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/category/get_obj_category_list/22",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1/category/get_obj_category_list/22",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"category",
+								"get_obj_category_list",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1/session/session_slicer_metric_group_queries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"gazeType\":\"gaze\",\"entityFilters\":{\"projectId\":258,\"sceneId\":\"8186a9f6-64cb-46a0-ba5e-55255cbb8000\",\"versionId\":22},\"aggregations\":\"all\",\"groups\":[{\"objectIds\":[\"editor_5bed61aa-9fa4-448d-b496-723616d5b33f\"],\"name\":\"23184\"},{\"objectIds\":[\"editor_7d28c004-da0a-4bd5-9783-b66af2c8196d\"],\"name\":\"23185\"}]}"
+						},
+						"url": {
+							"raw": "127.0.0.1/session/session_slicer_metric_group_queries",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"session",
+								"session_slicer_metric_group_queries"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
